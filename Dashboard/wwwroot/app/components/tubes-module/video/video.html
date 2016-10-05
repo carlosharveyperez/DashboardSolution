@@ -1,0 +1,12 @@
+﻿<div class="video-image-container">
+    <img class="video-image" src="{{video.thumbnail.url}}"  /> 
+    
+    <div class="image-label" [style.background-color]="backColor">
+        
+        <p class="font-settings">{{video.title}}</p>
+        
+        <button (click)="playVideo()" class="btn btn-default btn-sm tooltip-container button-settings">
+            Play <span class="top-tooltiptext">Play Video</span>
+        </button>
+    </div> 
+</div>

@@ -1,0 +1,12 @@
+﻿<div class="row">
+    
+    <div class="input-group">
+        <span class="input-group-addon icon-container"><span class="glyphicon glyphicon-search search-icon"></span></span>
+        <input [formControl]="searchBox" #searchInputBox type="text" class="form-control search-box" autofocus placeholder="Search...">
+    </div>
+    
+    <div class="tubes-container" [@flyIn]="flyState">
+        <video-tube *ngFor="let v of videos" [video]="v" [backColor]="getBackColor(v)"></video-tube>
+    </div>
+
+</div>

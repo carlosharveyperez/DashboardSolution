@@ -1,0 +1,27 @@
+﻿
+<div class="outer-picture-container" >
+    
+    <div id="arrowL" (click)="scrollLeft()">
+        <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+    </div>
+    
+    <div class="picture-container" #scroller>
+        
+        <div class="picture-frame" *ngFor="let pict of photos">
+            <img class="child-image" src="{{pict.uri}}" alt="{{pict.title}}" /> 
+            
+            <span class="glyphicon glyphicon-menu-up active-carousel-icon"
+                  (click)="showCarousel(pict)"></span>
+            
+            <p class="picture-label"><span style="margin-left: 2px; margin-top: 2px;">{{pict.title}}</span></p>
+        </div>
+        
+    </div>
+    
+    <div id="arrowR" (click)="scrollRight()">
+        <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+    </div>
+
+</div>
+
+    

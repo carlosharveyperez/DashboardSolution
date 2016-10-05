@@ -1,0 +1,43 @@
+﻿<div class="header">
+    <div class="left-header">
+        <h4 class="page-header-item">Photo Albums</h4>
+
+        <button type="submit" class="btn btn-default tooltip-container smallerbutton"
+                routerLink="Add" routerLinkActive="active">
+            Add<span class="right-tooltiptext">Create a new album</span>
+        </button>
+    </div>
+    
+    <application-links class="app-links"></application-links>
+
+</div>
+
+<div *ngFor="let album of _albums">
+ 
+    <div class="horizontal">
+        <h4 class="horizontal-header-primary">{{album.title}}</h4>
+
+        <div class="edit-buttons-container">
+            <button (click)="showWarningMessage(album)" routerLinkActive="active"
+                    class="btn btn-default image-button tooltip-container">
+                <span class="top-tooltiptext" >Remove album</span>
+                <img width="20" height="20" src="/images/delete-icon.png"/>
+
+            </button>
+
+            <button (click)="editAlbum(album)" routerLinkActive="active"
+                    class="btn btn-default image-button tooltip-container">
+                <span class="top-tooltiptext" >Edit album</span>
+                <img width="20" height="20" src="/images/edit-icon.png"/>
+            </button>
+            
+            <h6 class="count-header">Count: {{album.photos.length}}</h6>
+
+        </div>
+
+    </div>
+
+    <br/>
+    <album-component [album]="album" [photos]="album.photos"></album-component>
+    <br/>
+</div>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFaOhsbFOIEqxJVsY7MV8IwAAAAACAAAAAAAQZgAAAAEAACAAAABWPledmXf9/sjUDv3eJBl30CEeQXCBsB+MFD4Es8wxqwAAAAAOgAAAAAIAACAAAAC5UxW6KqGUQHQuATg038VNfQj3rL/RmT0eWatX6/sKfIAAAAAsOedDELA4Y9Z8R9siNQWnw7iuFO+8XK7DNtnbwsM8e7KuX60uKkw5Dfkss5I81luv0ddlTyiC3eF4OZZQ9F/UGsVSZIrJdlm+A4JNGBUmPowUL+VRF78WctgKMSCO6EnYnyRY/f2Yv3i+80rw96TSBc/MX+ty6MbYZoRtZ5Wn/EAAAABL1fm5rhJkKabtojzBQO1q29TNBPtC0rzSUJm1F3h/SiA2r2cEg1zBqUxYgYkMM/utvh57Y5nLUCUWsytCYErL</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:chp1databaseserver.database.windows.net,1433;Initial Catalog=chpDashboardDatabase;Persist Security Info=False;User ID=carlosharveyperez;Password=Itrustmyson99_;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

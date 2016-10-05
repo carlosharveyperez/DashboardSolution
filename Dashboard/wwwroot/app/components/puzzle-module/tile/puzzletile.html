@@ -1,0 +1,8 @@
+﻿<div class="container-outer"> 
+    <div class="container"
+        [style.background-color]="tileInfo.backColor" [style.visibility]="tileInfo.visibility"
+        [@slideTrigger]="slideDirection" (click)="slideTile()" [@rotateIt]="rotationState"
+        (@slideTrigger.done)="onSlideCompleted($event)">
+        {{tileInfo.tileNumber}}
+    </div>
+ </div>

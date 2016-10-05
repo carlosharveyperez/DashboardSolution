@@ -1,0 +1,25 @@
+﻿.icon-container {
+    width: 40px;
+}
+
+.search-icon {
+    margin-left: -10px;
+    font-size: 20px;
+}
+
+.search-box {
+    width: 300px;
+}
+
+.input-group {
+    margin-left: 30px;
+    margin-bottom:30px;
+}
+
+.tubes-container {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    max-width: 1000px;
+}

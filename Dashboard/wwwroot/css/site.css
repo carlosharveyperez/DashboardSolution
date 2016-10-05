@@ -1,0 +1,190 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: black;
+    color : silver;
+    overflow-x: hidden;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+    outline-color: orange;
+}
+
+input[type="checkbox"] {
+    width: 0;
+}
+
+input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 0px 4px 0px -20px;
+    vertical-align: middle;
+    background: url(../images/CheckBoxStripe.png) no-repeat left top ;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:focus + label span {
+    background: url(../images/CheckBoxStripe.png) no-repeat -48px top;
+}
+
+input[type="checkbox"]:checked + label span {
+    background: url(../images/CheckBoxStripe.png) no-repeat -24px top;
+}
+
+input[type="checkbox"]:checked:focus + label span {
+    background: url(../images/CheckBoxStripe.png) no-repeat -72px top;
+}
+
+input[type="radio"] {
+    width: 0;
+}
+
+input[type="radio"] + label span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 0px 4px 0px -20px;
+    vertical-align: middle;
+    background: url(../images/RadioButtonStripe.png) no-repeat left top ;
+    cursor: pointer;
+}
+
+input[type="radio"]:focus + label span {
+    background: url(../images/RadioButtonStripe.png) no-repeat -48px top;
+}
+
+input[type="radio"]:checked + label span {
+    background: url(../images/RadioButtonStripe.png) no-repeat -24px top;
+}
+
+input[type="radio"]:checked:focus + label span {
+    background: url(../images/RadioButtonStripe.png) no-repeat -72px top;
+}
+
+
+/* Dropdown Menu Hover Style */
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color: transparent;
+    border-color: orange;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* Dropdown Menu Style: avoids text resizing when switching between focus and unfocused */
+.dropdown-menu > li > a {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+}
+
+input {
+    background-color: transparent;
+}
+
+.form-control {
+    background-color: transparent;
+    border: 1px solid silver;
+    border-radius : 0px;
+    color : white;
+}
+
+a {
+    color: #229FD6;
+}
+
+.form-control:focus {
+  border-color: orange
+}
+
+a:hover, a:focus {
+    color: orange;
+}
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4  {
+    color: white;
+}
+
+h5, h6,
+.h5, .h6 {
+    color: orange;
+}
+  
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand:active,
+.navbar-inverse .navbar-brand:hover {
+    color: orange;
+}
+
+.navbar-inverse .navbar-nav > li > a
+{
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:active,
+.navbar-inverse .navbar-nav > li > a:hover
+{
+    color: orange;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus
+{
+    outline-width: 2px;
+}
+
+.navbar-brand:focus {
+   outline-width: 2px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.dropdown-toggle:focus {
+    outline-style: auto;
+    outline-offset: -2px;
+    outline-width: 2px;
+    outline-color: orange;
+}
+
+a:focus {
+    outline-color: orange;
+    outline-width: 0px;
+}
+
+div.horizontal {
+    margin-left: 30px;
+    display: inline;
+}
+
+h5.horizontal {
+    display: inline;
+}
+
+h5.highlight {
+    color: #229FD6;
+}
+
+.smallerbutton {
+    padding: 6px 10px;
+    font-size: 11px;
+}
+

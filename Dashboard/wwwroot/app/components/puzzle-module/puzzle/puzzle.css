@@ -1,0 +1,15 @@
+﻿.left-header {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header {
+  padding-bottom: 2px;
+  margin: 8px 0 8px;
+  border-bottom: 1px solid #282828;
+}
+
+.app-links {
+    display: inline-block;
+    float: right;
+}

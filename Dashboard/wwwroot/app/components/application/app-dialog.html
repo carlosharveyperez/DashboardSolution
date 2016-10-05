@@ -1,0 +1,19 @@
+﻿<div class="row">
+    <modal #mainDialog modalClass="modal-sm modalslideDown" closeOnOutsideClick="false">
+       
+        <modal-header>
+            <h6>{{header}}</h6>
+        </modal-header>
+
+        <modal-content>
+            {{message}}
+        </modal-content>
+
+            <modal-footer>
+                <a class="btn" (click)="mainDialog.close(commitLabel)" >{{commitLabel}}</a>
+                <a *ngIf="isCloseButtonVisible" class="btn" (click)="mainDialog.close(cancelLabel)">{{cancelLabel}}</a>
+            </modal-footer>
+       
+    </modal>    
+
+</div>

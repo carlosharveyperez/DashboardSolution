@@ -1,0 +1,36 @@
+﻿.board-container {
+   
+}
+
+.board {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 404px;
+    height: 404px;
+    border: 2px solid orange;
+}
+
+.info-area {
+    padding: 10px 0;
+    margin: 4px auto;
+    width: 404px;
+}
+
+.toLeft {
+    float: left;
+    margin-bottom: 4px;
+}
+
+.toRight {
+    float: right;
+    margin-bottom: 4px;
+}
+
+.buttonToRight {
+    float: right;
+}
+
+.default-text-color {
+    color: white;
+}

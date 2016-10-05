@@ -1,0 +1,29 @@
+﻿<div class="row">
+    
+    <div class="board-container">
+        
+        <div class="info-area">
+            <span class="toLeft default-text-color">Moves: {{movesCounter}}</span>
+            
+            <span class="toRight default-text-color">Time: {{formattedTime}}</span>
+        </div>
+
+        <div class="board" [@flyIn]="flyState">
+            <puzzle-tile *ngFor="let ti of _tiles" [tileInfo]="ti"
+                         (startingSlide)="handleStartingSlide($event)"
+                         (endingSlide)="handleEndingSlide($event)"></puzzle-tile>
+        </div>
+
+
+        <div class="info-area">
+            <h6 *ngIf="showPuzzleSolvedMessage" class="toLeft default-text-color">Congratulations, you solve it!</h6>
+
+            <button type="submit" (click)="startNewGame()"
+                    class="btn btn-default tooltip-container smallerbutton buttonToRight">
+                Start<span class="top-tooltiptext">New Game</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>

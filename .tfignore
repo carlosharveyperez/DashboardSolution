@@ -1,0 +1,10 @@
+*.js
+*.map
+*.min.css
+*.tfignore
+*.dg
+\Dashboard\bin
+\Dashboard\wwwroot\app\*.js
+\Dashboard\wwwroot\images\AlbumImages
+\Dashboard\node_modules
+\.vs

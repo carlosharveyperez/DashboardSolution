@@ -1,0 +1,32 @@
+﻿.video-image-container {
+    justify-content: center;
+    width: 250px;
+    border: 14px solid #282828;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.video-image {
+    width: 230px;
+    height: 176px;
+}
+
+.image-label {
+    position: relative;
+    padding-top: 4px;
+    height: 100px;
+    width: 230px;
+}
+
+.font-settings {
+    margin: 0 4px 4px 4px;
+    font-size: 14px;
+}
+
+.button-settings {
+    position: absolute;
+    bottom: 4px;
+    left: 10px;
+}
+

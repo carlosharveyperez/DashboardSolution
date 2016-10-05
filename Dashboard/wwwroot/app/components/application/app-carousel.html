@@ -1,0 +1,51 @@
+﻿<!-- Carousel -->
+
+<!-- Add TabIndex to allow div element to get key events-->
+<div tabindex="0" class="carousel-root" #carouselRoot (keyup)="onKeyUp($event)">
+    
+    <h6 class="album-title">{{album?.title}}</h6>
+    
+    <div id="app-carousel" [@visibilityTrigger]="visibility" (@visibilityTrigger.done)="onVisibilityAnimationCompleted($event)"
+         class="carousel slide carousel-container"
+         [style.width]="getIdealDimension()" [style.height]="getIdealDimension()"
+         data-ride="carousel">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li *ngFor="let info of imageInfos; let i = index"
+                data-target="#app-carousel" [attr.data-slide-to]="i" [class.active]="i == selectedIndex"></li>
+        </ol>
+
+        <!-- Slides-->
+        <div class="carousel-inner" role="listbox">
+            
+            <span class="count-span">Count: {{imageInfos?.length}}</span>
+
+            <span class="glyphicon glyphicon-remove close-icon" (click)="hide()"></span>
+
+            <div class="item" [class.active]="i == selectedIndex" [style.height]="getIdealDimension()"
+                 *ngFor="let info of imageInfos; let i = index">
+                <img #imageSource (load)="onImageLoad(imageSource, info)"
+                     class="slide-image" [style.max-width]="getIdealDimension()"
+                     [style.max-height]="getIdealDimension()" src="{{info.url}}" alt="{{info.title}}">
+
+                <div class="carousel-caption">
+                    <h4>{{info.title}}</h4>
+                </div>
+            </div>
+        </div>
+
+        <!--Navigational Arrows-->
+        <a class="left carousel-control" href="#app-carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#app-carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+
+</div>
+

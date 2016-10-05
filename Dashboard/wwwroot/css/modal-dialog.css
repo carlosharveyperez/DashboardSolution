@@ -1,0 +1,59 @@
+﻿/* Vertically Center Bootstrap Modal Dialog*/
+.modal.in .modal-dialog {
+    transform: translateY(-50%);
+}
+
+.modal-dialog {
+    top: 50vh;
+    width: 600px;
+    margin: auto auto;
+}
+
+.modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.modal-sm {
+    width: 300px;
+}
+
+
+/* Customize padding of the Modal Sections*/
+.modal-header {
+    padding: 5px 15px 5px 15px;
+}
+
+.modal-footer {
+    padding:  5px 20px 5px 20px;
+}
+
+/* Customize links */
+a.btn {
+    padding: 5px 5px;
+}
+
+a.btn:hover, a.btn:focus {
+    color: orange;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.modalslideDown{
+	animation-name: modalslideDown;
+	animation-duration: 0.5s;	
+	animation-timing-function: ease;	
+	visibility: visible !important;						
+}
+
+@keyframes modalslideDown {
+	0% {
+		transform: translateY(-200%);
+	}
+    100% {
+		transform: translateY(-50%);
+	}		
+}
+
+

@@ -1,0 +1,22 @@
+﻿.container-outer {
+    border: 2px solid black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 96px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.container:hover {
+    border: 2px solid orange;
+    font-size: 42px;
+}
+
+    

@@ -1,0 +1,72 @@
+﻿.carousel-root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    outline: 0;
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    background-color: rgba(0,0,0, 0.9)
+}
+
+.close-icon {
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 20px;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.album-title {
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.carousel-inner {
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.item {
+    text-align: center;
+}
+
+.slide-image {
+    margin-top: 200px;
+    width: auto;
+    height: auto;
+}
+
+.carousel-indicators li{
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 14px;
+    height: 14px;
+}
+
+.count-span {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: orange;
+}

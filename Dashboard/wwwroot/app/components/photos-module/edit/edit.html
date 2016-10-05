@@ -1,0 +1,124 @@
+﻿<div>
+    <h5>{{editMode}} Album</h5>
+    <br />
+
+    <div class="edit-container slideUp">
+
+        <div>
+            <form (ngSubmit)="updateOrCreateAlbum(album)" #editForm="ngForm">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input [(ngModel)]="album.title" type="text" class="form-control" id="title"
+                           required name="title" #titleInput="ngModel">
+
+                    <div [hidden]="titleInput.valid || titleInput.pristine" class="error-message">
+                        Title is required
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea [(ngModel)]="album.description" type="text" rows="5" required style="width:300px"
+                              class="form-control" id="description" name="description" #descInput="ngModel">></textarea>
+                    
+                    <div [hidden]="descInput.valid || descInput.pristine" class="error-message">
+                        Description is required
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="creationDate">Created on</label>
+                    <label style="margin-left:10px" id="creationDate">{{album.dateCreated | date:'shortDate'}}</label>
+                </div>
+
+                <button type="button" name="backButton" (click)="goBack()" class="btn btn-default button">Back</button>
+
+                <button #spy type="submit" name="saveButton" [disabled]="!editForm.form.valid || editForm.form.pristine" class="btn btn-default button">
+                    Save
+                </button>
+
+            </form>
+        </div>
+
+        <div>
+
+            <h6 class="add-left-margin">Photos</h6>
+
+            <div class="photo-container">
+
+                <div style="position: relative" *ngFor="let pict of album.photos">
+                    
+                    <div class="row">
+                        <modal #editPhotoDialog modalClass="modal-sm modalslideDown" >
+
+                            <modal-header>
+                                <h6>Edit Photo</h6>
+                            </modal-header>
+
+                            <modal-content >
+                                <form #editPhotoTitleForm="ngForm">
+                                    <div class="form-group" style="min-height: 100px">
+                                        <label for="title">Title</label>
+                                        <input [(ngModel)]="pict.title" type="text" class="form-control" id="photoTitle"
+                                               required name="photoTitle" #photoTitleInput="ngModel">
+
+                                        <div [hidden]="photoTitleInput.valid || photoTitleInput.pristine" class="error-message">
+                                            Title is required
+                                        </div>
+                                    </div>
+                                </form>
+                            </modal-content>
+
+                            <modal-footer>
+                                <a class="btn" (click)="savePhotoTitle(pict, editPhotoDialog)">OK</a>
+                                <a class="btn" (click)="editPhotoDialog.close()">CANCEL</a>
+                            </modal-footer>
+
+                        </modal>
+
+                    </div>
+                    
+                    <img class="thumbnail" src="{{pict.uri}}" alt="{{pict.title}}"/>
+
+                    <div class="buttons-container">
+                        <div class="tooltip-container button-icon-container" (click)="editPhoto(pict, editPhotoDialog)">
+                            <img class="button-icon edit-icon" src="/images/edit-icon.png"/>
+                            <span class="top-tooltiptext shift">Edit Title</span>
+                        </div>
+
+                        <div class="tooltip-container button-icon-container" (click)="removePhoto(pict)">
+                            <img class="button-icon" src="/images/delete-icon.png"/>
+                            <span class="top-tooltiptext shift">Remove</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="add-photo-container">
+                <h6>Add Photos</h6>
+
+                <form enctype="multipart/form-data">
+                    <div class="form-group">
+                        <fieldset class="file-input-label fil" [disabled]="!isEditingExistingAlbum">
+                            <label class="files-label" for="selectFiles">
+                                Add Photos...
+                                <input #inputForFiles type="file" multiple class="form-control" [disabled]="!isEditingExistingAlbum"
+                                       id="selectFiles" name="selectFiles" (change)="onFilesSelected()" />
+                            </label>
+                        </fieldset>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br />
+
+</div>

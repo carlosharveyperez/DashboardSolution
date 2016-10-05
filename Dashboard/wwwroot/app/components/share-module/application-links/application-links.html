@@ -1,0 +1,41 @@
+﻿<div class="links-container">
+    
+    <div class="images-container">
+        <fieldset class="image-item tooltip-container" routerLinkActive="active-link" 
+             [disabled]="router.isActive('/PhotoAlbums')">
+            <img src="images\homeimages\photos.png" />
+            
+            <span class="top-tooltiptext tooltip-settings">Photo Albums</span>
+
+            <a routerLink="/PhotoAlbums" >
+                <span class="link-spanner"></span>
+            </a>
+
+        </fieldset>
+
+        <fieldset class="image-item tooltip-container" routerLinkActive="active-link"
+              [disabled]="router.isActive('/Tubes')">
+            <img src="images\homeimages\youtube.png" />
+            
+            <span class="top-tooltiptext tooltip-settings">Tubes</span>
+
+            <a routerLink="/Tubes" >
+                <span class="link-spanner"></span>
+            </a>
+
+        </fieldset>
+
+        <fieldset class="image-item tooltip-container" routerLinkActive="active-link"
+              [disabled]="router.isActive('/Puzzle')">
+            <img src="images\homeimages\puzzle.png" />
+            
+            <span class="top-tooltiptext tooltip-settings">Puzzle 15</span>
+
+            <a routerLink="/Puzzle" >
+                <span class="link-spanner"></span>
+            </a>
+
+        </fieldset>
+    </div>
+
+</div>

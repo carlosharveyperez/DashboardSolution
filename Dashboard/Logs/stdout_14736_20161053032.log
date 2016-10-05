@@ -1,0 +1,1596 @@
+info: Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory[1]
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [Albums] AS [a])
+          THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+      END
+info: Microsoft.Extensions.DependencyInjection.DataProtectionServices[0]
+      User profile is available. Using 'C:\Users\carlos\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Development
+Content root path: C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard
+Now listening on: http://localhost:12194
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 DEBUG http://localhost:27606/  0
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 111.2081ms 200 
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Dashboard.Controllers.HomeController.Index (Dashboard) with arguments () - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Dashboard.Controllers.HomeController.Index (Dashboard) in 2465.2087ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/css/site.min.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/lib/bootstrap/dist/css/bootstrapcyborg.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 3028.6458ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/site.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\js\site.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/css/site.min.css'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\css\site.min.css'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/bootstrap/dist/css/bootstrapcyborg.css'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\lib\bootstrap\dist\css\bootstrapcyborg.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 106.1952ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 130.2781ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 160.6485ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/main.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/main.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\main.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 7.7827ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/app.module.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/enviroment.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/@angular/core/bundles/core.umd.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/enviroment.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\enviroment.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/app.module.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\app.module.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/@angular/core/bundles/core.umd.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\@angular\core\bundles\core.umd.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 76.2898ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\@angular\platform-browser-dynamic\bundles\platform-browser-dynamic.umd.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 100.9357ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 129.3438ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 136.5043ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/ng2-modal/index.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/@angular/platform-browser/bundles/platform-browser.umd.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/@angular/http/bundles/http.umd.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/app.routing.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/application/application.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/home/home.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/ng2-modal/index.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\ng2-modal\index.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/app.routing.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\app.routing.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/application/application.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\application\application.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/@angular/platform-browser/bundles/platform-browser.umd.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\@angular\platform-browser\bundles\platform-browser.umd.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 97.14ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/home/home.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\home\home.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 99.9781ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/@angular/http/bundles/http.umd.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\@angular\http\bundles\http.umd.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 198.3231ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 201.7846ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/application/app-dialog.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/application/waiting-component.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/application/app-carousel.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/application/waiting-component.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\application\waiting-component.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/application/app-carousel.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\application\app-carousel.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 215.7579ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 59.9458ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 264.3951ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 57.9112ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/@angular/compiler/bundles/compiler.umd.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/Subject.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/Observable.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/@angular/common/bundles/common.umd.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/Observable.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\Observable.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/@angular/common/bundles/common.umd.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\@angular\common\bundles\common.umd.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 49.3368ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/ng2-modal/Modal.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/ng2-modal/RouteModal.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/@angular/compiler/bundles/compiler.umd.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\@angular\compiler\bundles\compiler.umd.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/ng2-modal/RouteModal.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\ng2-modal\RouteModal.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 88.7145ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/@angular/router/bundles/router.umd.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 39.4121ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/application/app-dialog.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\application\app-dialog.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/@angular/router/bundles/router.umd.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\@angular\router\bundles\router.umd.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 289.6514ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/util/root.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 85.4841ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/util/toSubscriber.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/ng2-modal/Modal.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\ng2-modal\Modal.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/symbol/observable.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/util/toSubscriber.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\util\toSubscriber.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/util/root.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\util\root.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 337.7216ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/Subject.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\Subject.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 108.6615ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/symbol/observable.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\symbol\observable.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 162.156ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 289.4163ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 399.8794ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/observable/from.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/observable/of.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/operator/every.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 188.9273ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/observable/of.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\observable\of.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/operator/every.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\operator\every.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/operator/map.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 82.5322ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 81.1092ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/operator/mergeAll.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/operator/map.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\operator\map.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/observable/from.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\observable\from.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/operator/mergeMap.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/operator/mergeMap.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\operator\mergeMap.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/operator/reduce.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 39.2837ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/operator/reduce.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\operator\reduce.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/operator/mergeAll.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\operator\mergeAll.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 150.7435ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 124.4589ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/operator/catch.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 74.4141ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/operator/concatAll.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/operator/catch.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\operator\catch.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 38.2624ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/operator/concatAll.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\operator\concatAll.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/operator/first.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 336.734ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/util/EmptyError.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/observable/fromPromise.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/operator/first.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\operator\first.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/util/EmptyError.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\util\EmptyError.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 89.1732ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 51.1967ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 101.3213ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/operator/last.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/BehaviorSubject.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/Subscriber.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/symbol/rxSubscriber.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/Subscription.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/Subscriber.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\Subscriber.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/Subscription.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\Subscription.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/symbol/rxSubscriber.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\symbol\rxSubscriber.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 66.1273ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/util/ObjectUnsubscribedError.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 78.3505ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 88.4241ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/util/ObjectUnsubscribedError.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\util\ObjectUnsubscribedError.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/SubjectSubscription.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/util/subscribeToResult.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/observable/fromPromise.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\observable\fromPromise.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/SubjectSubscription.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\SubjectSubscription.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/operator/last.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\operator\last.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/BehaviorSubject.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\BehaviorSubject.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 64.4854ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/util/subscribeToResult.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\util\subscribeToResult.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 305.8591ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 304.7727ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/OuterSubscriber.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/observable/FromObservable.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 237.7901ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 204.198ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/observable/ArrayObservable.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/OuterSubscriber.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\OuterSubscriber.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/observable/ArrayObservable.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\observable\ArrayObservable.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/observable/FromObservable.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\observable\FromObservable.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 128.6963ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/util/isFunction.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/Observer.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 133.3466ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/util/isFunction.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\util\isFunction.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 83.8691ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 74.7448ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 658.7923ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/Observer.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\Observer.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/util/isArray.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/util/isObject.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/util/tryCatch.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/util/isArray.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\util\isArray.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/util/errorObject.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/util/tryCatch.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\util\tryCatch.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 63.7178ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 61.6666ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/util/errorObject.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\util\errorObject.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 246.4032ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/util/UnsubscriptionError.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 90.4962ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/util/isPromise.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/util/UnsubscriptionError.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\util\UnsubscriptionError.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/symbol/iterator.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 69.9463ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/symbol/iterator.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\symbol\iterator.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/InnerSubscriber.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/observable/EmptyObservable.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/observable/ScalarObservable.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/InnerSubscriber.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\InnerSubscriber.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/observable/EmptyObservable.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\observable\EmptyObservable.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/util/isObject.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\util\isObject.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 305.9204ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 64.2484ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/util/isScheduler.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/observable/PromiseObservable.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 102.1438ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/util/isScheduler.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\util\isScheduler.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 188.5757ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 91.8849ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/observable/IteratorObservable.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/util/isPromise.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\util\isPromise.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/observable/ArrayLikeObservable.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/observable/ScalarObservable.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\observable\ScalarObservable.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/observable/ArrayLikeObservable.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\observable\ArrayLikeObservable.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/observable/PromiseObservable.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\observable\PromiseObservable.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 264.0664ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/operator/observeOn.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 241.4037ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/observable/IteratorObservable.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\observable\IteratorObservable.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 431.3504ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/operator/observeOn.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\operator\observeOn.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 78.712ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/Notification.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 168.9917ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/Notification.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\Notification.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 9.6023ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 233.5803ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/application/waiting-component.html  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/application/app-dialog.html  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/application/app-carousel.html  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/application/application.html  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/home/home.html  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/application/waiting-component.html'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\application\waiting-component.html'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/home/home.html'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\home\home.html'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/application/application.html'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\application\application.html'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/application/app-carousel.html'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\application\app-carousel.html'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/application/app-dialog.html'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\application\app-dialog.html'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 77.4995ms 200 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 76.8386ms 200 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 102.7819ms 200 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/application/app-carousel.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/application/application.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/application/app-dialog.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 157.2999ms 200 text/html
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/application/app-carousel.css'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\application\app-carousel.css'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/application/application.css'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\application\application.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 76.1662ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 54.121ms 200 text/css
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/application/app-dialog.css'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\application\app-dialog.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/application/waiting-component.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/application/waiting-component.css'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\application\waiting-component.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 119.3306ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 34.0728ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 262.7481ms 200 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/home/home.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/home/home.css'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\home\home.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 6.3024ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/homeimages/photos.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/homeimages/youtube.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/homeimages/puzzle.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/homeimages/youtube.png'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\homeimages\youtube.png'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/homeimages/photos.png'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\homeimages\photos.png'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/homeimages/puzzle.png'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\homeimages\puzzle.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 75.3907ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 101.2897ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 101.3735ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/puzzle-module/puzzle-module.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/puzzle-module/puzzle-module.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\puzzle-module\puzzle-module.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 10.5196ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/puzzle-module/puzzle/puzzle.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/puzzle-module/puzzle-module-routing.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/share-module/shared-module.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/puzzle-module/tile/puzzletile.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/puzzle-module/board/puzzleboard.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/puzzle-module/puzzle/puzzle.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\puzzle-module\puzzle\puzzle.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/puzzle-module/board/puzzleboard.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\puzzle-module\board\puzzleboard.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/puzzle-module/puzzle-module-routing.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\puzzle-module\puzzle-module-routing.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 55.1999ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 80.3436ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/share-module/shared-module.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\share-module\shared-module.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 84.6489ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/domain/TileInfo.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/puzzle-module/board/NextMoveHelper.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/puzzle-module/board/BoardUtil.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 156.1092ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/puzzle-module/board/NextMoveHelper.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\puzzle-module\board\NextMoveHelper.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 77.6761ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/puzzle-module/board/BoardUtil.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\puzzle-module\board\BoardUtil.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/puzzle-module/tile/puzzletile.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\puzzle-module\tile\puzzletile.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/share-module/application-links/application-links.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 236.7467ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 105.5421ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/share-module/application-links/application-links.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\share-module\application-links\application-links.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/domain/TileInfo.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\domain\TileInfo.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 78.7645ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 210.4187ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/share-module/application-links/application-links.html  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/puzzle-module/tile/puzzletile.html  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/share-module/application-links/application-links.html'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\share-module\application-links\application-links.html'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/components/puzzle-module/tile/puzzletile.html was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 16.9516ms 200 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 17.3696ms 304 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/share-module/application-links/application-links.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/puzzle-module/tile/puzzletile.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/share-module/application-links/application-links.css'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\share-module\application-links\application-links.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 28.6032ms 200 text/css
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/components/puzzle-module/tile/puzzletile.css was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 30.3264ms 304 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/photos-module.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/photos-module/photos-module.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\photos-module\photos-module.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 6.5133ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/@angular/forms/bundles/forms.umd.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/album/album-component.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/photo-albums/photo-albums.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/photos-module-routing.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/display/display.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/edit/edit.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/photos-module/album/album-component.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\photos-module\album\album-component.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/photos-module/display/display.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\photos-module\display\display.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/photos-module/photos-module-routing.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\photos-module\photos-module-routing.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/@angular/forms/bundles/forms.umd.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\@angular\forms\bundles\forms.umd.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 100.2874ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 123.3776ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 146.2346ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/photos-module/photo-albums/photo-albums.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\photos-module\photo-albums\photo-albums.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/guards/AdminLoggedGuard.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 218.2879ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/photos-module/guards/AdminLoggedGuard.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\photos-module\guards\AdminLoggedGuard.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/services/AlbumService.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/domain/ImageInfo.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/photos-module/edit/edit.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\photos-module\edit\edit.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 276.8091ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 107.7387ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/services/AlbumService.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\services\AlbumService.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/domain/ImageInfo.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\domain\ImageInfo.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/domain/Album.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 99.5155ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/domain/Album.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\domain\Album.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 125.5966ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 379.5871ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/operator/toPromise.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/add/operator/catch.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/add/operator/map.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 128.8843ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/domain/KeyValuePair.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/add/operator/map.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\add\operator\map.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 33.4711ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/domain/KeyValuePair.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\domain\KeyValuePair.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/add/operator/catch.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\add\operator\catch.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 56.7537ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 85.394ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/operator/toPromise.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\operator\toPromise.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 165.5879ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/domain/Photo.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/domain/Photo.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\domain\Photo.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 7.0147ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/album/album-component.html  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/edit/edit.html  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/display/display.html  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/photo-albums/photo-albums.html  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/photos-module/album/album-component.html'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\photos-module\album\album-component.html'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/photos-module/display/display.html'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\photos-module\display\display.html'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 76.5917ms 200 text/html
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/photos-module/edit/edit.html'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\photos-module\edit\edit.html'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/photos-module/photo-albums/photo-albums.html'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\photos-module\photo-albums\photo-albums.html'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 126.7202ms 200 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/album/album-component.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 149.4876ms 200 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 176.3814ms 200 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/display/display.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/edit/edit.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/photos-module/display/display.css'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\photos-module\display\display.css'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/photos-module/album/album-component.css'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\photos-module\album\album-component.css'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/photos-module/edit/edit.css'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\photos-module\edit\edit.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 78.1115ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 78.7534ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 137.2822ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/api/albums/GetAlbumsId  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Dashboard.Controllers.AlbumsController.GetAlbumsId (Dashboard) with arguments () - ModelState is Valid
+info: Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory[1]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[Id], [a].[DateCreated], [a].[Description], [a].[Owner], [a].[Title]
+      FROM [Albums] AS [a]
+      ORDER BY [a].[Id]
+info: Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Dashboard.Controllers.AlbumsController.GetAlbumsId (Dashboard) in 350.1629ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 374.0763ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/api/albums/1  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/api/albums/2  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/api/albums/30  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/api/albums/31  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Dashboard.Controllers.AlbumsController.GetAlbum (Dashboard) with arguments (2) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Dashboard.Controllers.AlbumsController.GetAlbum (Dashboard) with arguments (31) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Dashboard.Controllers.AlbumsController.GetAlbum (Dashboard) with arguments (30) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Dashboard.Controllers.AlbumsController.GetAlbum (Dashboard) with arguments (1) - ModelState is Valid
+warn: Microsoft.EntityFrameworkCore.Query.Internal.SqlServerQueryCompilationContextFactory[8]
+      The LINQ expression 'SingleOrDefault()' could not be translated and will be evaluated locally. To configure this warning use the DbContextOptionsBuilder.ConfigureWarnings API (event id 'RelationalEventId.QueryClientEvaluationWarning'). ConfigureWarnings can be used when overriding the DbContext.OnConfiguring method or using AddDbContext on the application service provider.
+info: Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory[1]
+      Executed DbCommand (20ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[Id], [a].[DateCreated], [a].[Description], [a].[Owner], [a].[Title]
+      FROM [Albums] AS [a]
+      WHERE [a].[Id] = @__id_0
+      ORDER BY [a].[Id]
+info: Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory[1]
+      Executed DbCommand (20ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[Id], [a].[DateCreated], [a].[Description], [a].[Owner], [a].[Title]
+      FROM [Albums] AS [a]
+      WHERE [a].[Id] = @__id_0
+      ORDER BY [a].[Id]
+info: Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory[1]
+      Executed DbCommand (20ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[Id], [a].[DateCreated], [a].[Description], [a].[Owner], [a].[Title]
+      FROM [Albums] AS [a]
+      WHERE [a].[Id] = @__id_0
+      ORDER BY [a].[Id]
+info: Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory[1]
+      Executed DbCommand (20ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[Id], [a].[DateCreated], [a].[Description], [a].[Owner], [a].[Title]
+      FROM [Albums] AS [a]
+      WHERE [a].[Id] = @__id_0
+      ORDER BY [a].[Id]
+info: Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory[1]
+      Executed DbCommand (2ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[AlbumId], [p].[DateUploaded], [p].[Title], [p].[Uri]
+      FROM [Photos] AS [p]
+      WHERE EXISTS (
+          SELECT TOP(2) 1
+          FROM [Albums] AS [a]
+          WHERE ([a].[Id] = @__id_0) AND ([p].[AlbumId] = [a].[Id]))
+      ORDER BY [p].[AlbumId]
+info: Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory[1]
+      Executed DbCommand (2ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[AlbumId], [p].[DateUploaded], [p].[Title], [p].[Uri]
+      FROM [Photos] AS [p]
+      WHERE EXISTS (
+          SELECT TOP(2) 1
+          FROM [Albums] AS [a]
+          WHERE ([a].[Id] = @__id_0) AND ([p].[AlbumId] = [a].[Id]))
+      ORDER BY [p].[AlbumId]
+info: Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory[1]
+      Executed DbCommand (2ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[AlbumId], [p].[DateUploaded], [p].[Title], [p].[Uri]
+      FROM [Photos] AS [p]
+      WHERE EXISTS (
+          SELECT TOP(2) 1
+          FROM [Albums] AS [a]
+          WHERE ([a].[Id] = @__id_0) AND ([p].[AlbumId] = [a].[Id]))
+      ORDER BY [p].[AlbumId]
+info: Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory[1]
+      Executed DbCommand (3ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[AlbumId], [p].[DateUploaded], [p].[Title], [p].[Uri]
+      FROM [Photos] AS [p]
+      WHERE EXISTS (
+          SELECT TOP(2) 1
+          FROM [Albums] AS [a]
+          WHERE ([a].[Id] = @__id_0) AND ([p].[AlbumId] = [a].[Id]))
+      ORDER BY [p].[AlbumId]
+info: Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+info: Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+info: Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+info: Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Dashboard.Controllers.AlbumsController.GetAlbum (Dashboard) in 851.4842ms
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Dashboard.Controllers.AlbumsController.GetAlbum (Dashboard) in 851.3992ms
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Dashboard.Controllers.AlbumsController.GetAlbum (Dashboard) in 851.385ms
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Dashboard.Controllers.AlbumsController.GetAlbum (Dashboard) in 851.406ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 961.1816ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 938.0607ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 989.1014ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 963.0092ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/105513cf-69ac-4f51-9e39-b76e59156357.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/delete-icon.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/b177f0f3-31f9-4c24-9f72-1bfb4eed3834.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/edit-icon.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/1cd6ba97-d783-4cef-bdf5-048c22b0cb5a.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/delete-icon.png'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\delete-icon.png'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/1cd6ba97-d783-4cef-bdf5-048c22b0cb5a.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\1cd6ba97-d783-4cef-bdf5-048c22b0cb5a.jpg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 78.3359ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/edit-icon.png'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\edit-icon.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/13fec24d-8621-4707-889f-ef9692f2b332.jpg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/13fec24d-8621-4707-889f-ef9692f2b332.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\13fec24d-8621-4707-889f-ef9692f2b332.jpg'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/105513cf-69ac-4f51-9e39-b76e59156357.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\105513cf-69ac-4f51-9e39-b76e59156357.jpg'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/b177f0f3-31f9-4c24-9f72-1bfb4eed3834.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\b177f0f3-31f9-4c24-9f72-1bfb4eed3834.jpg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 179.05ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 98.9968ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 205.0849ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 205.0608ms 200 application/font-woff2
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/972bbf0d-69f7-4aac-b675-7aab702dbc9f.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/0db05c15-e6e6-4b82-a087-e228f5007e4b.jpg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/0db05c15-e6e6-4b82-a087-e228f5007e4b.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\0db05c15-e6e6-4b82-a087-e228f5007e4b.jpg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/6ba10215-e792-40d8-b63c-20ad04eba535.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 294.7382ms 200 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/6ba10215-e792-40d8-b63c-20ad04eba535.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\6ba10215-e792-40d8-b63c-20ad04eba535.jpg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 320.0272ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/3d4f0e14-25b8-44c0-95a9-829cd50d9a7c.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/ba30cdfc-52c8-4a5c-be20-60e8e925a270.jpg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/ba30cdfc-52c8-4a5c-be20-60e8e925a270.jpg was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/1bedfe65-58d6-43a8-af7d-8719cf2b86d0.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 44.2958ms 304 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 142.8502ms 200 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/1bedfe65-58d6-43a8-af7d-8719cf2b86d0.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\1bedfe65-58d6-43a8-af7d-8719cf2b86d0.jpg'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/972bbf0d-69f7-4aac-b675-7aab702dbc9f.jpg was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/1052a3d6-b781-4f0e-87fb-3427b4c2ad6a.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 240.7436ms 304 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/3d4f0e14-25b8-44c0-95a9-829cd50d9a7c.jpg was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 173.5832ms 304 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/1052a3d6-b781-4f0e-87fb-3427b4c2ad6a.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\1052a3d6-b781-4f0e-87fb-3427b4c2ad6a.jpg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/7503db8d-a5c1-4704-9547-88c47838e7df.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 284.4046ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/1a6dfa66-4e77-433c-ab5b-69a47aa661d2.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/b09de67f-753b-4c6d-934b-5edc2cfbd6bf.jpg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/7503db8d-a5c1-4704-9547-88c47838e7df.jpg was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/50c5b058-7464-40ec-a03d-953dc9464c5f.jpg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/1a6dfa66-4e77-433c-ab5b-69a47aa661d2.jpg was not modified
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/50c5b058-7464-40ec-a03d-953dc9464c5f.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\50c5b058-7464-40ec-a03d-953dc9464c5f.jpg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 147.9749ms 304 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 300.284ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 197.6665ms 304 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/713e65ae-4994-4f0d-bf5d-665d54ebf31c.jpg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/b09de67f-753b-4c6d-934b-5edc2cfbd6bf.jpg was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 405.865ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 193.3007ms 304 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/713e65ae-4994-4f0d-bf5d-665d54ebf31c.jpg was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/68424591-524a-4ab3-85db-8cfc119fc3b4.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/7ee53f78-d7ef-436c-b2c8-392c06e2e625.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 200.1866ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 92.8077ms 304 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/e22023a3-de46-46d7-9207-a71a51d95453.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/28743560-5178-4c69-9dc9-e00c2c1853c7.jpg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/7ee53f78-d7ef-436c-b2c8-392c06e2e625.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\7ee53f78-d7ef-436c-b2c8-392c06e2e625.jpg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/a0375483-49bf-431d-b701-7c93e2f4794b.jpg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/a0375483-49bf-431d-b701-7c93e2f4794b.jpg was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 12.1572ms 304 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/e22023a3-de46-46d7-9207-a71a51d95453.jpg was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/cd44eb53-97ec-4677-8c69-3383fe2366b7.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 115.2642ms 304 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/28743560-5178-4c69-9dc9-e00c2c1853c7.jpg was not modified
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/68424591-524a-4ab3-85db-8cfc119fc3b4.jpg was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/729656c9-4f36-4c8d-b62e-13660c15ae51.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/70c5d9c9-3291-4322-b9ed-24558a3596ce.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 193.9067ms 304 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/729656c9-4f36-4c8d-b62e-13660c15ae51.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\729656c9-4f36-4c8d-b62e-13660c15ae51.jpg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 296.4164ms 200 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/70c5d9c9-3291-4322-b9ed-24558a3596ce.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\70c5d9c9-3291-4322-b9ed-24558a3596ce.jpg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/f641f9c8-33fd-49a2-97ad-8fb0048fdec5.jpg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/cd44eb53-97ec-4677-8c69-3383fe2366b7.jpg was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/8bf54173-9f58-4f7e-97d7-546f68ee12b5.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 257.7778ms 304 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/f641f9c8-33fd-49a2-97ad-8fb0048fdec5.jpg was not modified
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/8bf54173-9f58-4f7e-97d7-546f68ee12b5.jpg was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 59.6305ms 304 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 56.3369ms 304 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/c7afdaf7-2e8d-499f-8ee8-67f33c294110.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/a0a4c38f-b1a7-42ca-ab95-16c1b637ccdd.jpg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/c7afdaf7-2e8d-499f-8ee8-67f33c294110.jpg was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 61.2388ms 304 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 529.0372ms 304 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/a0a4c38f-b1a7-42ca-ab95-16c1b637ccdd.jpg was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 299.505ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/f9b595bd-58b6-4dc8-8afe-b03ad66006b1.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 106.2442ms 304 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/deecd187-56e7-4161-bdcd-1e356c7ca4f5.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 373.835ms 200 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/f9b595bd-58b6-4dc8-8afe-b03ad66006b1.jpg was not modified
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/deecd187-56e7-4161-bdcd-1e356c7ca4f5.jpg was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/c52aa265-8d5f-4bf4-97de-988c56833b6c.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/16325c7a-8989-41f3-aece-562220bb5e38.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 104.0468ms 304 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/450e5ff6-9cde-43b3-811b-0034178515c0.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/ce7bacaa-2b59-40bb-b305-79c9369b8fc7.jpg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/16325c7a-8989-41f3-aece-562220bb5e38.jpg was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/9fd2c247-4a01-44be-820d-dd014b72b101.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 209.7471ms 304 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/ce7bacaa-2b59-40bb-b305-79c9369b8fc7.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\ce7bacaa-2b59-40bb-b305-79c9369b8fc7.jpg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/4127835f-4197-4f1d-9e9e-57e0afb5eaaf.jpg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/9fd2c247-4a01-44be-820d-dd014b72b101.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\9fd2c247-4a01-44be-820d-dd014b72b101.jpg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 140.9384ms 304 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/4127835f-4197-4f1d-9e9e-57e0afb5eaaf.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\4127835f-4197-4f1d-9e9e-57e0afb5eaaf.jpg'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/AlbumImages/c52aa265-8d5f-4bf4-97de-988c56833b6c.jpg was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/d7038d58-07b2-4672-88a1-03732644e638.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 135.8821ms 200 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/450e5ff6-9cde-43b3-811b-0034178515c0.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\450e5ff6-9cde-43b3-811b-0034178515c0.jpg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 134.7581ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 109.14ms 200 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/d7038d58-07b2-4672-88a1-03732644e638.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\d7038d58-07b2-4672-88a1-03732644e638.jpg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 301.0655ms 304 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/fbbd62a1-140c-4123-9c6e-fab61f15803b.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/f9cbab47-657d-4adf-a8d1-a229978f1e67.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/5a65f5be-6187-46e3-a0d3-022416fdf540.jpg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/fbbd62a1-140c-4123-9c6e-fab61f15803b.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\fbbd62a1-140c-4123-9c6e-fab61f15803b.jpg'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/f9cbab47-657d-4adf-a8d1-a229978f1e67.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\f9cbab47-657d-4adf-a8d1-a229978f1e67.jpg'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/5a65f5be-6187-46e3-a0d3-022416fdf540.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\5a65f5be-6187-46e3-a0d3-022416fdf540.jpg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 105.4718ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 429.6413ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 161.1194ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/c0a451e6-683a-44d8-92b8-279ac07bc166.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/d3dbfa3a-0488-4bf8-8281-750d967ba663.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 140.7385ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/53db0371-1ae8-4fb2-b309-d383fc97d278.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 343.0771ms 200 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/d3dbfa3a-0488-4bf8-8281-750d967ba663.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\d3dbfa3a-0488-4bf8-8281-750d967ba663.jpg'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/53db0371-1ae8-4fb2-b309-d383fc97d278.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\53db0371-1ae8-4fb2-b309-d383fc97d278.jpg'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/c0a451e6-683a-44d8-92b8-279ac07bc166.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\c0a451e6-683a-44d8-92b8-279ac07bc166.jpg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/92952b78-b2e5-4138-adde-6c6e794d8ed2.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/images/AlbumImages/0f880c25-0e1f-41e2-b093-e4a82b20a6e6.jpg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 184.7978ms 200 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/92952b78-b2e5-4138-adde-6c6e794d8ed2.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\92952b78-b2e5-4138-adde-6c6e794d8ed2.jpg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 181.6294ms 200 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/AlbumImages/0f880c25-0e1f-41e2-b093-e4a82b20a6e6.jpg'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\images\AlbumImages\0f880c25-0e1f-41e2-b093-e4a82b20a6e6.jpg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 70.1838ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 194.0841ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 147.7687ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/tubes-module/tubes-module.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/tubes-module/tubes-module.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\tubes-module\tubes-module.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 7.9363ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/tubes-module/tubes-module-routing.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/tubes-module/tubes/tubes.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/services/VideoService.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/tubes-module/display/display.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/tubes-module/video/video.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/tubes-module/tubes/tubes.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\tubes-module\tubes\tubes.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/tubes-module/tubes-module-routing.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\tubes-module\tubes-module-routing.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/services/VideoService.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\services\VideoService.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/tubes-module/display/display.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\tubes-module\display\display.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/tubes-module/video/video.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\tubes-module\video\video.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 166.7067ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 167.8591ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 167.5043ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 167.5043ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 167.6817ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/domain/Video.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/domain/Video.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\domain\Video.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/add/observable/fromEvent.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/add/operator/switchMap.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/add/operator/throttleTime.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 30.4916ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/add/operator/switchMap.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\add\operator\switchMap.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/add/operator/throttleTime.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\add\operator\throttleTime.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 95.5894ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/add/observable/fromEvent.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\add\observable\fromEvent.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 121.9249ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/operator/switchMap.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 131.6075ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/operator/throttleTime.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/observable/fromEvent.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/operator/switchMap.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\operator\switchMap.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/operator/throttleTime.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\operator\throttleTime.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 22.7879ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 18.206ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/observable/fromEvent.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\observable\fromEvent.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 20.8264ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/scheduler/async.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/scheduler/async.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\scheduler\async.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/observable/FromEventObservable.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 10.7373ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/observable/FromEventObservable.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\observable\FromEventObservable.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/scheduler/AsyncScheduler.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/scheduler/AsyncAction.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 34.1842ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/scheduler/AsyncScheduler.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\scheduler\AsyncScheduler.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/scheduler/AsyncAction.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\scheduler\AsyncAction.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 58.6879ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 60.0335ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/Scheduler.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/node_modules/rxjs/scheduler/Action.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/Scheduler.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\Scheduler.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/rxjs/scheduler/Action.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\node_modules\rxjs\scheduler\Action.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 11.1138ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 14.3079ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/tubes-module/tubes/tubes.html  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/tubes-module/display/display.html  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/tubes-module/video/video.html  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/tubes-module/tubes/tubes.html'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\tubes-module\tubes\tubes.html'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/tubes-module/video/video.html'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\tubes-module\video\video.html'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 54.4647ms 200 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/tubes-module/tubes/tubes.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/tubes-module/display/display.html'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\tubes-module\display\display.html'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/tubes-module/tubes/tubes.css'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\tubes-module\tubes\tubes.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 89.8353ms 200 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 35.3129ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 119.0426ms 200 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/tubes-module/display/display.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/tubes-module/video/video.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/tubes-module/display/display.css'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\tubes-module\display\display.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 34.0558ms 200 text/css
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/tubes-module/video/video.css'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\tubes-module\video\video.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 56.1362ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Dashboard.Controllers.HomeController.Index (Dashboard) with arguments () - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Dashboard.Controllers.HomeController.Index (Dashboard) in 34.8815ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 44.1366ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/main.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/main.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\main.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 7.7104ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/enviroment.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/app.module.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/enviroment.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\enviroment.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/app.module.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\app.module.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 53.1104ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 54.8368ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/app.routing.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/application/application.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/application/app-dialog.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/application/waiting-component.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/application/app-carousel.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/home/home.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/app.routing.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\app.routing.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/application/app-carousel.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\application\app-carousel.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/application/waiting-component.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\application\waiting-component.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/application/app-dialog.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\application\app-dialog.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 117.6073ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 140.6544ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 168.3719ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/application/application.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\application\application.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/app/components/home/home.js'. Physical path: 'C:\ASPNETCOREPROJECTS\DashboardSolution\Dashboard\wwwroot\app\components\home\home.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 226.3191ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 234.9334ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 260.6136ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/tubes-module/tubes-module.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/components/tubes-module/tubes-module.js was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 6.5714ms 304 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/tubes-module/tubes/tubes.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/tubes-module/display/display.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/tubes-module/video/video.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/services/VideoService.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/tubes-module/tubes-module-routing.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/share-module/shared-module.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/components/tubes-module/tubes/tubes.js was not modified
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/components/tubes-module/video/video.js was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 71.8667ms 304 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/components/share-module/shared-module.js was not modified
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/components/tubes-module/tubes-module-routing.js was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 116.562ms 304 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/components/tubes-module/display/display.js was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/domain/Video.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 169.3268ms 304 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/services/VideoService.js was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 208.9984ms 304 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/domain/Video.js was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 72.9772ms 304 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/share-module/application-links/application-links.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 263.2087ms 304 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 287.6042ms 304 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/components/share-module/application-links/application-links.js was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 64.0177ms 304 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/photos-module.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/components/photos-module/photos-module.js was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 5.98ms 304 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/photo-albums/photo-albums.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/album/album-component.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/photos-module-routing.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/guards/AdminLoggedGuard.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/display/display.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/components/photos-module/edit/edit.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/components/photos-module/photo-albums/photo-albums.js was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 51.8454ms 304 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/components/photos-module/photos-module-routing.js was not modified
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/components/photos-module/album/album-component.js was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 75.3342ms 304 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/services/AlbumService.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/services/AlbumService.js was not modified
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/components/photos-module/display/display.js was not modified
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/components/photos-module/guards/AdminLoggedGuard.js was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 81.8997ms 304 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/components/photos-module/edit/edit.js was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 182.2765ms 304 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 205.3311ms 304 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 233.5783ms 304 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/domain/KeyValuePair.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/domain/KeyValuePair.js was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/domain/ImageInfo.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/domain/Album.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 27.8071ms 304 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/domain/Album.js was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 49.4233ms 304 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/domain/ImageInfo.js was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 301.9619ms 304 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 107.0209ms 304 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/app/domain/Photo.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /app/domain/Photo.js was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 6.9439ms 304 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/api/albums/GetAlbumsId  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Dashboard.Controllers.AlbumsController.GetAlbumsId (Dashboard) with arguments () - ModelState is Valid
+info: Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory[1]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[Id], [a].[DateCreated], [a].[Description], [a].[Owner], [a].[Title]
+      FROM [Albums] AS [a]
+      ORDER BY [a].[Id]
+info: Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Dashboard.Controllers.AlbumsController.GetAlbumsId (Dashboard) in 12.5906ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 20.8849ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/api/albums/1  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/api/albums/2  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/api/albums/31  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:27606/api/albums/30  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Dashboard.Controllers.AlbumsController.GetAlbum (Dashboard) with arguments (1) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Dashboard.Controllers.AlbumsController.GetAlbum (Dashboard) with arguments (30) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Dashboard.Controllers.AlbumsController.GetAlbum (Dashboard) with arguments (2) - ModelState is Valid
+info: Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory[1]
+      Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[Id], [a].[DateCreated], [a].[Description], [a].[Owner], [a].[Title]
+      FROM [Albums] AS [a]
+      WHERE [a].[Id] = @__id_0
+      ORDER BY [a].[Id]
+info: Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory[1]
+      Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[Id], [a].[DateCreated], [a].[Description], [a].[Owner], [a].[Title]
+      FROM [Albums] AS [a]
+      WHERE [a].[Id] = @__id_0
+      ORDER BY [a].[Id]
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Dashboard.Controllers.AlbumsController.GetAlbum (Dashboard) with arguments (31) - ModelState is Valid
+info: Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory[1]
+      Executed DbCommand (1ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[AlbumId], [p].[DateUploaded], [p].[Title], [p].[Uri]
+      FROM [Photos] AS [p]
+      WHERE EXISTS (
+          SELECT TOP(2) 1
+          FROM [Albums] AS [a]
+          WHERE ([a].[Id] = @__id_0) AND ([p].[AlbumId] = [a].[Id]))
+      ORDER BY [p].[AlbumId]
+info: Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory[1]
+      Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[Id], [a].[DateCreated], [a].[Description], [a].[Owner], [a].[Title]
+      FROM [Albums] AS [a]
+      WHERE [a].[Id] = @__id_0
+      ORDER BY [a].[Id]
+info: Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory[1]
+      Executed DbCommand (1ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[Id], [a].[DateCreated], [a].[Description], [a].[Owner], [a].[Title]
+      FROM [Albums] AS [a]
+      WHERE [a].[Id] = @__id_0
+      ORDER BY [a].[Id]
+info: Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory[1]
+      Executed DbCommand (1ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[AlbumId], [p].[DateUploaded], [p].[Title], [p].[Uri]
+      FROM [Photos] AS [p]
+      WHERE EXISTS (
+          SELECT TOP(2) 1
+          FROM [Albums] AS [a]
+          WHERE ([a].[Id] = @__id_0) AND ([p].[AlbumId] = [a].[Id]))
+      ORDER BY [p].[AlbumId]
+info: Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory[1]
+      Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[AlbumId], [p].[DateUploaded], [p].[Title], [p].[Uri]
+      FROM [Photos] AS [p]
+      WHERE EXISTS (
+          SELECT TOP(2) 1
+          FROM [Albums] AS [a]
+          WHERE ([a].[Id] = @__id_0) AND ([p].[AlbumId] = [a].[Id]))
+      ORDER BY [p].[AlbumId]
+info: Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory[1]
+      Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[AlbumId], [p].[DateUploaded], [p].[Title], [p].[Uri]
+      FROM [Photos] AS [p]
+      WHERE EXISTS (
+          SELECT TOP(2) 1
+          FROM [Albums] AS [a]
+          WHERE ([a].[Id] = @__id_0) AND ([p].[AlbumId] = [a].[Id]))
+      ORDER BY [p].[AlbumId]
+info: Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Dashboard.Controllers.AlbumsController.GetAlbum (Dashboard) in 184.283ms
+info: Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 246.9421ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Dashboard.Controllers.AlbumsController.GetAlbum (Dashboard) in 246.2167ms
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Dashboard.Controllers.AlbumsController.GetAlbum (Dashboard) in 235.3083ms
+info: Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 363.7143ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Dashboard.Controllers.AlbumsController.GetAlbum (Dashboard) in 335.4322ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 383.7273ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 430.2888ms 200 application/json; charset=utf-8

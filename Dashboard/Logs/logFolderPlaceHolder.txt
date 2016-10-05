@@ -1,0 +1,1 @@
+﻿Just to force the creation of the Logs Folder when deploying
