@@ -17,4 +17,7 @@ This should happen automatically when you open the solution.
 3- After the database has been created. Open a command prompt window and run the following command: "dotnet ef database update".
 This should update the database schema and creates the tables that support the data access layer for the application.
 
+Here is link with a live demo of the application:
+http://chpaspnetcoreplusangular.azurewebsites.net/
+
 
